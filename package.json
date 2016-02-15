@@ -4,7 +4,7 @@
   "description": "Sample project for demo of running istanbul with mocha using custom compilers",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha -- --compilers js:babel-core/register test/"
+    "test": "istanbul cover _mocha -- --compilers js:babel-register test/"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/istanbuljs/sample-mocha-compilers#readme",
   "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.4.5",
+    "babel-register": "^6.4.3",
     "babel-preset-es2015": "^6.3.13",
     "istanbul": "^1.0.0-alpha.2",
     "mocha": "^2.3.4"
