@@ -28,6 +28,13 @@ class Rectangle {
     get area() {
         return this.width * this.height;
     }
+
+    get measures() {
+        let height = { height: this.height };
+        let width = { width: this.width };
+
+        return { ...height, ...width };
+    }
 }
 
 // We export the Rectangle class so it can
